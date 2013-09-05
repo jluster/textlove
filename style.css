@@ -1,0 +1,386 @@
+/*
+Theme Name: text*love
+Description: text is love. design is happiness. code is poetry. clowns are still creepy.
+Author: Jonas M Luster
+Author URI: http://jml.is
+Version: 1.0
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1,h2,h3,h4 {
+  font-weight: normal;
+}
+
+h1 a.mute {
+  text-decoration: none;
+}
+
+h2.post-title {
+  font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #069;
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+nav.posts-nav {
+  text-align: center;
+}
+
+nav.nav ul {
+  margin-top: 3em;
+}
+
+nav.nav ul li {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+nav.nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+}
+
+nav.nav a:hover {
+  box-shadow: 0 0 22px rgba(0,0,0,0.3);
+}
+
+nav.nav ul li a i {
+  color: #666;
+}
+
+/* LAYOUT CSS */
+#layout {
+    padding-left: 20%; /* "left col (nav + list)" width */
+    position: relative;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    margin-left: -20%;
+    color: #000;
+}
+
+.header {
+    margin: 50% 2em 0;
+    text-align: right;
+}
+
+.brand-title,
+.brand-tagline {
+    margin: 0;
+}
+.brand-title {
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+.brand-tagline {
+    font-weight: 300;
+    color: #bbb;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 3px solid rgb(103, 103, 180);
+    color: #fff;
+    margin-top: 1em;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 3px solid rgb(142, 142, 214);
+    color: rgb(142, 142, 214);
+    text-decoration: none;
+}
+
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 2em 3em 0;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+
+.credits {
+  text-align: center;
+  padding: 1em 0;
+  color: #333;
+  font-size: 80%;
+}
+
+.credits a {
+  font-size: 100%;
+  text-decoration: none;
+  color: #069;
+}
+
+@media (max-width: 1024px) {
+  .firstimg {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        margin: 0;
+    }
+
+    .header {
+        text-align: center;
+        top: auto;
+        margin: 1em auto 0 auto;
+        position: static;
+    }
+
+    #layout {
+        padding: 0;
+    }
+
+    nav.nav {
+      display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 2em 1em 0;
+    }
+}
+
+footer.meta {
+  color: rgb(204, 204, 204);
+  font-size: 90%;
+  font-family: Tahoma, Arial, Sans-Serif;
+}
+
+blockquote:before {
+    content: "\f10d"; 
+    font-family: FontAwesome;
+    font-size: 300%;
+    color: #ccc;
+    float: left;
+    margin-right: 10px;
+}
+
+blockquote {
+  border: 1px solid #ececec;
+  background-color: #fcfcfc;
+  color: #333;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.shademe {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* -- images -- */
+
+img.size-large {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+img.single-center,
+img.aligncenter {
+  border-radius: 4px;
+  box-shadow: 2px 4px 14px rgba(0,0,0,0.5);
+}
+
+.alignright {
+  float: right;
+  margin-left: 1em;
+}
+
+.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.wp-caption-text, .gallery-caption {
+  font-family: Tahoma, Arial, Sans-Serif;
+  font-size: 70%;
+  text-align: center;
+  color: #555;
+}
+
+.embed-youtube {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe.youtube-player {
+  max-width: 100%;
+}
+
+.firstimg {
+  float: right;
+  padding-left: 1em;
+}
+
+.firstimg img {
+  max-width: 70px;
+  height: auto;
+  border: 1px solid #666;
+  border-radius: 3px;
+  box-shadow: 1px 1px 11px rgba(0,0,0,0.3);
+}
+
+img.changelog {
+  border: 2px solid #069;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+/* -- comments -- */
+
+.comment.bypostauthor .comment-body { }
+
+textarea.input.textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+input.text.input, input.email.input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-body {
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.depth-2 {
+  margin-left: 1em;
+}
+
+.depth-3 {
+  margin-left: 2em;
+}
+
+.depth-4 {
+  margin-left: 3em;
+}
+
+.depth-5 {
+  margin-left: 4em;
+}
+
+.comment-author img.avatar {
+  float: right;
+}
+
+.vcard {
+  font-weight: 700;
+}
+
+.reply {
+  text-align: right;
+}
+
+.form-allowed-tags {
+  font-size: 80%;
+  font-family: Verdana, Arial, Sans-Serif;
+}
+
+/* -- posts -- */
+
+.post {
+  font-size: 110%;
+  clear: both;
+  margin-bottom: 3em;
+}
+
+.sticky {}
+
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.post-description, .post-content {
+    font-family: Georgia, "Cambria", serif;
+    color: #222;
+    line-height: 1.8em;
+}
+
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
